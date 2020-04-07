@@ -1,0 +1,8 @@
+<h1>Nomes cadastrados:</h1>
+<button (click)="navegarParaCadastro()">Cadastrar</button>
+<!-- <p *ngFor="let nome of appService.nomes">{{ nome }}</p> -->
+
+<div *ngFor="let nome of appService.nomes">
+  <p>{{nome.nome}}</p>
+  <img [src]="nome.url" />
+</div>
